@@ -1,1 +1,16 @@
-
+public class AgeDiff {
+  public static String CalculateAge(int birth, int yearTo) {
+ int age = yearTo - birth;
+    if (age > 0){ 
+      return "You are " + age + (age == 1 ? " year old." : " years old.");
+        }
+        else if (age < 0) {
+          return "You will be born in "+ (-age)+(-age==1 ? " year." : " years.");
+        }
+        else{
+        return  "You were born this very year!";    
+          }                                 
+    
+	
+  }
+}
